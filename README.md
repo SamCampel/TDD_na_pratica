@@ -1,4 +1,4 @@
-# TDD com Express e Jest
+# 🧪 TDD com Express e Jest
 
 Este é um projeto simples que demonstra o uso de **Test-Driven Development (TDD)** com **Express** e **Jest**. Ele implementa uma API básica com rotas e testes automatizados.
 
@@ -23,34 +23,56 @@ Este é um projeto simples que demonstra o uso de **Test-Driven Development (TDD
 ## 🔧 Instalação
 
 1. Clone este repositório:
+
    ```bash
    git clone https://github.com/seu-usuario/seu-repositorio.git
    cd seu-repositorio
+   ```
 
 2. Instale as dependências:
+
    ```bash
    npm install
-# ▶️ Como Executar
+   ```
+
+## ▶️ Como Executar
 
 1. Inicie o servidor:
+
+   ```bash
    node src/server.js
+   ```
 
-2. O servidor estará rodando na porta 3000. Você pode acessar as seguintes rotas:
+2. O servidor estará rodando na porta `3000`. Você pode acessar as seguintes rotas:
 
-   - GET / → Retorna: { "success": true }
-   - GET /cor/usuario1 → Retorna: { "cor": "vermelho", "color": "red" }
+   - `GET /` → Retorna:
 
-# 🧪 Como Executar os Testes
+     ```json
+     { "success": true }
+     ```
 
-Execute os testes com o comando:
-   npm test
+   - `GET /cor/usuario1` → Retorna:
+
+     ```json
+     { "cor": "vermelho", "color": "red" }
+     ```
+
+## 🧪 Como Executar os Testes
+
+Execute os testes com o seguinte comando:
+
+```bash
+npm test
+```
 
 Os testes verificarão:
+
 - Se a aplicação responde na porta 3000.
-- Se a rota /cor/usuario1 retorna a cor favorita corretamente.
+- Se a rota `/cor/usuario1` retorna a cor favorita corretamente.
 
-# 📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
+```bash
 .
 ├── .gitignore
 ├── package.json
@@ -59,13 +81,14 @@ Os testes verificarão:
 │   └── server.js      # Inicialização do servidor
 ├── test
 │   └── geral.test.js  # Testes automatizados
+```
 
-# 🛠️ Contribuindo
+## 🛠️ Contribuindo
 
-- Faça um fork do projeto.
-- Crie uma nova branch para suas alterações.
+- Faça um **fork** do projeto.
+- Crie uma nova **branch** para suas alterações.
 
-# 📄 Licença
+## 📄 Licença
 
-Este projeto está sob a licença ISC.
-Consulte o arquivo LICENSE para mais detalhes.
+Este projeto está sob a licença **ISC**.  
+Consulte o arquivo `LICENSE` para mais detalhes.
